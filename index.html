@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Html_react</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="header__top">
+            <a href="#" class="header__logo"> <!--logo:before или background-image сделаю картинку логотипа-->
+                React
+            </a>
+            <!--/.header__logo-->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Docs</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Tutorial</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">Community</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--/.header__nav-->
+            <div class="header__menu">
+                <input class="header__search" type="search" name="search">
+                <a href="#" class="header__version">
+                    v16.9.0
+                </a>
+                <a href="#" class="header__lang">
+                    Languages
+                </a>
+                <a href="#" class="header__github">
+                    GitHub
+                </a>
+            </div>
+            <!--/.header__menu-->
+        </div>
+        <!--/.header__nav-->
+        <div class="header__offer">
+            <div class="header__content">
+                <h1 class="header__title">React</h1>
+                <p class="header__text">A JavaScript library for building user interfaces</p>
+                <div class="header__btns btns">
+                    <a class="btn btns__start" href="#">Get Started</a>
+                    <a class="btn btns__tutorial" href="#">Take the Tutorial</a>
+                </div>
+                <!--/.header__btns-->
+            </div>
+            <!--/.header__content-->
+        </div>
+        <!--/.header__offer-->
+    </header>
+    <!--/.header-->
+    <div id="main" class="main">
+        <section class="section info">
+            <div class="info__col">
+                <h3 class="info__title">Declarative</h3>
+                <div class="info__block">
+                    <p class="info__text">
+                        React makes it painless to create interactive UIs.
+                        Design simple views for each state in your application,
+                        and React will efficiently update and render just the
+                        right components when your data changes.
+                    </p>
+                    <p class="info__text">
+                        Declarative views make your code more predictable and
+                        easier to debug.
+                    </p>
+                </div>
+                <!--/.section-col__info-->
+            </div>
+            <!--/.section-col-->
+            <div class="info__col">
+                <h3 class="info__title">Component-Based</h3>
+                <div class="info__block">
+                    <p class="info__text">
+                        Build encapsulated components that manage their own state,
+                        then compose them to make complex UIs.
+                    </p>
+                    <p class="info__text">
+                        Since component logic is written in JavaScript instead of
+                        templates, you can easily pass rich data through your app
+                        and keep state out of the DOM.
+                    </p>
+                </div>
+                <!--/.section-col__info-->
+            </div>
+            <!--/.section-col-->
+            <div class="info__col">
+                <h3 class="info__title">Learn Once, Write Anywhere</h3>
+                <div class="info__block">
+                    <p class="info__text">
+                        We don’t make assumptions about the rest of your technology
+                        stack, so you can develop new features in React without
+                        rewriting existing code.
+                    </p>
+                    <p class="info__text">
+                        React can also render on the server using Node and power
+                        mobile apps using <a class="section__link" href="#" target="_blank">React Native</a>
+                    </p>
+                </div>
+                <!--/.section-col__info-->
+            </div>
+            <!--/.section-col-->
+        </section>
+        <!--/.info-->
+        <hr>
+        <div class="blocks">
+            <section class="section block">
+                <h3 class="block__title">A simple component</h3>
+                <div class="block__text">
+                    <p class="block__part">React components implement a <code class="block__code">render()</code>
+                        method that takes input data and returns what to display. This example
+                        uses an XML-like syntax called JSX. Input data that is passed into the
+                        component can be accessed by <code class="block__code">render()</code>
+                        via <code class="block__code">this.props</code>
+                    </p>
+                    <p class="block__part"><strong>JSX is optional and not required to use React.</strong>  Try the
+                        <a class="section__link" href="#">Babel REPL</a>  to see the raw JavaScript
+                        code produced by the JSX compilation step.
+                    </p>
+                </div>
+                <!--/.block__text-->
+                <div class="block__window">
+                    <img src="#" alt="window_1 with code">
+                </div>
+                <!--/.block__window-->
+            </section>
+            <section class="section block">
+                <h3 class="block__title">A Stateful Component</h3>
+                <div class="block__text">
+                    <p class="block__part">In addition to taking input data (accessed via
+                        <code class="block__code">this.props</code> ), a component can maintain
+                        internal state data (accessed via <code class="block__code">this.state</code>
+                        ). When a component’s state data changes, the rendered markup will be updated
+                        by re-invoking <code class="block__code">render()</code>.
+                    </p>
+                </div>
+                <!--/.block__text-->
+                <div class="block__window">
+                    <img src="#" alt="window_2 with code">
+                </div>
+                <!--/.block__window-->
+            </section>
+            <section class="section block">
+                <h3 class="block__title">An Application</h3>
+                <div class="block__text">
+                    <p class="block__part">Using <code class="block__code">props</code> and
+                        <code class="block__code">state</code> , we can put together a small
+                        Todo application. This example uses <code class="block__code">state</code>
+                        to track the current list of items as well as the text that the user has
+                        entered. Although event handlers appear to be rendered inline, they will
+                        be collected and implemented using event delegation.
+                    </p>
+                </div>
+                <!--/.block__text-->
+                <div class="block__window">
+                    <img src="#" alt="window_3 with code">
+                </div>
+                <!--/.block__window-->
+            </section>
+            <section class="section block">
+                <h3 class="block__title">A Component Using External Plugins</h3>
+                <div class="block__text">
+                    <p class="block__part">React allows you to interface with
+                        other libraries and frameworks. This example uses
+                        <strong>remarkable</strong> , an external Markdown library,
+                        to convert the <code class="block__code">&lt;textarea&gt;</code>’s
+                        value in real time.
+                    </p>
+                </div>
+                <!--/.block__text-->
+                <div class="block__window">
+                    <img src="#" alt="window_3 with code">
+                </div>
+                <!--/.block__window-->
+            </section>
+        </div>
+        <!--/.blocks-->
+    </div>
+    <!--/.main-->
+    <footer id="footer" class="footer">
+        <div class="footer__btns btns">
+            <a class="btn btns__start" href="#">Get Started</a>
+            <a class="btn btns__tutorial" href="#">Take the Tutorial</a>
+        </div>
+        <!--/.footer__btns-->
+        <div class="footer__content">
+            <div class="footer__left">
+                <a class="footer__logo" href="#">
+                    <img src="#" alt="logo Facebook Open Source">
+                </a>
+                <p class="footer__copyright">Copyright &copy; 2019 Facebook Inc.</p>
+            </div>
+            <!--/.footer__left-->
+            <div class="footer__right">
+                <div class="footer__block">
+                    <h4 class="footer__title">Docs</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Installation</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Main Concepts</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Advanced Guides</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">API Reference</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Hooks (New)</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Testing</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Contributing</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">FAQ</a></li>
+                        </ul>
+                        <!--/.footer__nav-list-->
+                    </nav>
+                    <!--/.footer__nav-->
+                </div>
+                <!--/.footer__block-->
+                <div class="footer__block">
+                    <h4 class="footer__title">Channels</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">GitHub</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Stack Overflow</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Discussion Forums</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Reactiflux Chat</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">DEV Community</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Facebook</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Twitter</a></li>
+                        </ul>
+                        <!--/.footer__nav-list-->
+                    </nav>
+                    <!--/.footer__nav-->
+                </div>
+                <!--/.footer__block-->
+                <div class="footer__block">
+                    <h4 class="footer__title">Community</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Community Resources</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Tools</a></li>
+                        </ul>
+                        <!--/.footer__nav-list-->
+                    </nav>
+                    <!--/.footer__nav-->
+                </div>
+                <!--/.footer__block-->
+                <div class="footer__block">
+                    <h4 class="footer__title">More</h4>
+                    <nav class="footer__nav">
+                        <ul class="footer__nav-list">
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Tutorial</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Blog</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">Acknowledgements</a></li>
+                            <li class="footer__nav-item"><a class="footer__nav-link" href="#">React Native</a></li>
+                        </ul>
+                        <!--/.footer__nav-list-->
+                    </nav>
+                    <!--/.footer__nav-->
+                </div>
+                <!--/.footer__block-->
+            </div>
+            <!--/.footer__right-->
+        </div>
+        <!--/.footer__content-->
+    </footer>
+</body>
+</html>
